@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: formulaBlack;
+  src: url(./Fonts/Formula1-Black.ttf);
+}
+@font-face {
+  font-family: formulaBold;
+  src: url(./Fonts/Formula1-Bold.ttf);
+}
+@font-face {
+  font-family: formulaRegular;
+  src: url(./Fonts/Formula1-Regular.ttf);
+}
+@font-face {
+  font-family: formulaWide;
+  src: url(./Fonts/Formula1-Wide.ttf);
+}
+
+:root {
+  --formulaBlack: formulaBlack;
+  --formulaBold: formulaBold;
+  --formulaRegular: formulaRegular;
+  --formulaWide: formulaWide;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ed1c24;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff200;
+}

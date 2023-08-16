@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  padding-bottom: 5rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+#upper-text {
+  color: #ed1c24;
+  font-size: 2.75rem;
+}
+#lower-text {
+  margin-top: 20px;
+  color: azure;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: var(--formulaRegular);
+  /* padding: 0 4.7vw; */
+  text-align: justify;
+}
+#box {
+  background-color: aliceblue;
+  height: 30dvw;
+  width: 80%;
+  aspect-ratio: 16/9;
+  margin-bottom: 6dvw;
+}
+
+#about-text {
+  margin-top: 2dvw;
+  color: #ed1c24;
+  font-size: 4vw;
+  text-align: left;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 8rem;
+  font-family: "Formula1 Display Wide";
+}
+.robo-poster {
+  width: 70%;
+  padding: 2rem 0;
+}
+
+.treads {
+  position: absolute;
+  z-index: -1;
+  right: -5rem;
+  top: 38%;
+}
+
+#tread-2 {
+  top: 10%;
+}

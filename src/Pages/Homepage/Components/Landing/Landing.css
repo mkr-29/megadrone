@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Racing Sans One", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: none;
+  justify-content: space-around;
+  padding-top: 25rem;
+  overflow-x: hidden;
+  position: relative;
+  /* changes */
+  background: url(../../Assets/preloader.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.front {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17dvw;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(-90deg);
+  gap: 25px;
+  /* margin-left: -33dvw; */
+  position: absolute;
+  left: -9rem;
+  z-index: 10;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #fff200;
+}
+
+.cars {
+  width: 100dvw;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1dvw; */
+  align-items: end;
+  position: relative;
+}
+
+#hero-text {
+  font-size: 10dvw;
+  padding: none;
+  font-style: normal;
+  animation: sizeChange 25s infinite, stick 6s;
+  z-index: 101;
+  position: absolute;
+  top: 40%;
+}
+@keyframes stick {
+  0% {
+    position: fixed;
+    top: 50%;
+  }
+  90% {
+    top: 50%;
+    position: fixed;
+  }
+  100% {
+    top: 50%;
+    position: relative;
+  }
+}
+@keyframes sizeChange {
+  0%,
+  100% {
+    font-size: 10dvw; /* Start and end with font-size 5dvw */
+    top: 25%;
+  }
+  50% {
+    font-size: 12dvw; /* Peak font-size of 10dvw */
+    top: 25%;
+  }
+}
+
+#hero-subtext {
+  font-size: 1.75dvw;
+  margin-top: -20px;
+  animation: fade-in 5s;
+  font-family: var(--formulaRegular);
+}
+
+.car {
+  width: 4 dvw;
+  max-width: 100%;
+  height: auto;
+  opacity: 1; /* 0.3 */
+  background: transparent;
+  margin-top: -50px;
+}
+
+#img-1 {
+  animation: fade-in-left 15s;
+  margin-bottom: 20px;
+}
+
+#img-2 {
+  animation: fade-in-right 15s;
+  width: 38%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate(-10dvw, -4dvh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translate(10dvw, -4dvh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
