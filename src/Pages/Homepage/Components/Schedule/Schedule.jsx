@@ -51,13 +51,16 @@ export default function Schedule() {
             <text x="12%" y="0%" id="text">
               Day 1
             </text>
-            <text x="20%" y="45%" id="text" className="subhead-sch">
-              Introduction to Robotics
+            <text x="16%" y="43%" id="text" className="subhead-sch">
+              Introduction to FPV Drones
+            </text>
+            <text x="13%" y="50%" id="text" className="subhead-sch">
+              and Basics of Components
             </text>
             <g id="sub-text">
               <image href={Clock} x="15%" y="51.5%" width="40" height="40" />
               <text x="25%" y="60%" class="sub-text">
-                17:30 - 19:30
+                17:00 - 19:30
               </text>
               <image href={Location} x="28%" y="70.5%" width="40" height="40" />
               <text x="40%" y="80%" class="sub-text">
@@ -86,13 +89,16 @@ export default function Schedule() {
             <text x="12%" y="0%" id="text">
               Day 2
             </text>
-            <text x="20%" y="45%" id="text" className="subhead-sch">
-              Building & Programming
+            <text x="25%" y="43%" id="text" className="subhead-sch">
+              Electronics and FPV
+            </text>
+            <text x="33%" y="50%" id="text" className="subhead-sch">
+              Equipments
             </text>
             <g id="sub-text">
               <image href={Clock} x="15%" y="51.5%" width="40" height="40" />
               <text x="25%" y="60%" class="sub-text">
-                17:30 - 19:30
+                17:00 - 19:30
               </text>
               <image href={Location} x="28%" y="70.5%" width="40" height="40" />
               <text x="40%" y="80%" class="sub-text">
@@ -121,18 +127,16 @@ export default function Schedule() {
             <text x="12%" y="0%" id="text">
               Day 3
             </text>
-            <text
-              x="20%"
-              y="45%"
-              id="text"
-              className="subhead-sch subhead-sch-l"
-            >
-              Robo Grand Prix
+            <text x="26%" y="43%" id="text" className="subhead-sch">
+              Final Assembly and
+            </text>
+            <text x="30%" y="50%" id="text" className="subhead-sch">
+              FPV Equipment
             </text>
             <g id="sub-text">
               <image href={Clock} x="15%" y="51.5%" width="40" height="40" />
               <text x="25%" y="60%" class="sub-text">
-                17:30 - 19:30
+                17:00 - 19:30
               </text>
               <image href={Location} x="28%" y="70.5%" width="40" height="40" />
               <text x="40%" y="80%" class="sub-text">
