@@ -8,11 +8,11 @@ import { db } from "../Firebase/FirebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 
 export default function Register() {
-  const [name, setName] = useState("");
-  const [roll, setRoll] = useState("");
-  const [email, setEmail] = useState("");
-  const [contact, setContact] = useState("");
-  const [tid, setTid] = useState("");
+  const [name, setName] = useState();
+  const [roll, setRoll] = useState();
+  const [email, setEmail] = useState();
+  const [contact, setContact] = useState();
+  const [tid, setTid] = useState();
 
   const userCollectionRef = collection(db, "contactData");
 
@@ -35,8 +35,8 @@ export default function Register() {
         alert("Registered successfully!");
         setName("");
         setEmail("");
-        setRoll("");
-        setContact("");
+        setRoll();
+        setContact();
         setTid("");
       })
       .catch((error) => {
@@ -49,12 +49,12 @@ export default function Register() {
       <div className="heading">Register</div>
       <div className="register-section">
         <div className="reg-form">
-          <h1>Registrations Full</h1>
-          <h3>You'll be contacted soon if you have registered successfully!</h3>
-          {/* <form
+          {/* <h1>Registrations Full</h1> */}
+          {/* <h3>You'll be contacted soon if you have registered successfully!</h3> */}
+          <form
             onSubmit={handleSubmit}
             className="reg-content form"
-            // method="post"
+            method="post"
           >
             <input
               type="text"
@@ -65,7 +65,7 @@ export default function Register() {
               placeholder="Name"
             />
             <input
-              type="Number"
+              type="number"
               id="roll"
               value={roll}
               onChange={(event) => setRoll(event.target.value)}
@@ -81,7 +81,7 @@ export default function Register() {
               placeholder="JUIT Email Id"
             />
             <input
-              type="Number"
+              type="number"
               value={contact}
               onChange={(event) => setContact(event.target.value)}
               id="contact"
@@ -103,12 +103,12 @@ export default function Register() {
                 SUBMIT
               </button>
             </div>
-          </form> */}
-          {/* <div className="qrimage">
+          </form>
+          <div className="qrimage">
             <p>Limited Seats</p>
             <img src={qr} alt="" />
             <p>Registration Charges: Rs. 100 per person</p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
