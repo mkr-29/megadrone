@@ -17,3 +17,12 @@
   width: 50%;
   padding: 2rem 0;
 }
+
+@media screen and (max-width: 500px) {
+  .upcoming-events img {
+    width: 80%;
+  }
+  .upcoming-events {
+    padding-top: 2rem;
+  }
+}

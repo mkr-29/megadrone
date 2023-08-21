@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Clock from "./assets/Clock.svg";
 import Location from "./assets/venue.svg";
 import Layer from "./assets/layer.png";
 import "./Schedule.css";
 
 export default function Schedule() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-cards");
+        } else {
+          entry.target.classList.remove("show-cards");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".cards");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <section class="cards-container" id="schedule">
       <div class="cards-outer">
@@ -27,8 +48,8 @@ export default function Schedule() {
               mask="url(#svgmask)"
             ></image>
 
-            <text x="20%" y="0%" id="text">
-              DAY 1
+            <text x="12%" y="0%" id="text">
+              Day 1
             </text>
             <text x="20%" y="45%" id="text" className="subhead-sch">
               Introduction to Robotics
@@ -62,7 +83,7 @@ export default function Schedule() {
               mask="url(#svgmask)"
             ></image>
 
-            <text x="20%" y="0%" id="text">
+            <text x="12%" y="0%" id="text">
               Day 2
             </text>
             <text x="20%" y="45%" id="text" className="subhead-sch">

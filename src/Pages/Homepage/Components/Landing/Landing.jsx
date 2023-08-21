@@ -19,10 +19,10 @@ export default function Landing() {
           </a>
         </div>
         <div className="title">
-          <h1 id="hero-text">ROBOTRIX</h1>
+          <h1 id="hero-text">MEGADRONE</h1>
           <h2 id="hero-subtext">
-            Gear up for a high-speed showdown of innovation and skill<br></br>at
-            the Robo Grand Prix - where circuits and bytes collide!
+            Transform your creativity into reality at <br />
+            MegaDrone: The Ultimate Transformer-Themed Drone Making Event!
           </h2>
         </div>
       </div>

@@ -69,3 +69,49 @@ a {
   margin-top: 3dvw;
   font-size: 3dvw;
 }
+
+@media screen and (max-width: 500px) {
+  #logos .logo:nth-child(1) {
+    margin-left: 0rem;
+    width: 4rem;
+  }
+  #logos .logo:nth-child(2) {
+    width: 5rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+  }
+  #logos .logo:nth-child(3) {
+    margin-right: 0rem;
+    width: 3rem;
+  }
+  #logos {
+    gap: 0;
+    justify-content: space-around;
+  }
+  #links a img {
+    width: 1rem;
+  }
+  #links {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+  }
+  #info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #Footer {
+    position: relative;
+  }
+  #contact a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #quickLinks a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #copyright {
+    margin-bottom: 2rem;
+  }
+}

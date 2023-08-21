@@ -45,7 +45,7 @@ export default function Register() {
   };
   return (
     <div id="register-sec">
-      <img src={Tread} className="tread-reg" alt="" />
+      {/* <img src={Tread} className="tread-reg" alt="" /> */}
       <div className="heading">Register</div>
       <div className="register-section">
         <div className="reg-form">
@@ -88,16 +88,14 @@ export default function Register() {
               required
               placeholder="Contact No."
             />
-            <div>
-              <input
-                type="text"
-                value={tid}
-                onChange={(event) => setTid(event.target.value)}
-                required
-                placeholder="Payment Transaction ID"
-                id="tid"
-              />
-            </div>
+            <input
+              type="text"
+              value={tid}
+              onChange={(event) => setTid(event.target.value)}
+              required
+              placeholder="Payment Transaction ID"
+              id="tid"
+            />
             <div className="reg-submit-btn">
               <button className="reg-submit" type="submit">
                 SUBMIT

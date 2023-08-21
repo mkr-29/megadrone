@@ -14,19 +14,19 @@ code {
 
 @font-face {
   font-family: formulaBlack;
-  src: url(./Fonts/Formula1-Black.ttf);
+  /* src: url(./Fonts/Formula1-Black.ttf); */
 }
 @font-face {
   font-family: formulaBold;
-  src: url(./Fonts/Formula1-Bold.ttf);
+  /* src: url(./Fonts/Formula1-Bold.ttf); */
 }
 @font-face {
   font-family: formulaRegular;
-  src: url(./Fonts/Formula1-Regular.ttf);
+  /* src: url(./Fonts/Formula1-Regular.ttf); */
 }
 @font-face {
   font-family: formulaWide;
-  src: url(./Fonts/Formula1-Wide.ttf);
+  /* src: url(./Fonts/Formula1-Wide.ttf); */
 }
 
 :root {

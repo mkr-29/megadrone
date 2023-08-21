@@ -48,7 +48,7 @@
   font-family: "Formula1 Display Wide";
 }
 .robo-poster {
-  width: 70%;
+  width: 50%;
   padding: 2rem 0;
 }
 
@@ -61,4 +61,35 @@
 
 #tread-2 {
   top: 10%;
+}
+
+@media screen and (max-width: 500px) {
+  #lower-text {
+    font-size: 1.2rem;
+  }
+  .about-text {
+    padding: 0 1rem;
+  }
+  #upper-text {
+    font-size: 1.6rem;
+  }
+  #about {
+    padding-bottom: 0rem;
+    overflow: hidden;
+    height: 80vh;
+    /* margin-top: 4rem; */
+  }
+  .treads {
+    top: 82%;
+  }
+  #tread-2 {
+    top: 49%;
+  }
+  .robo-poster {
+    width: 80%;
+  }
+  #about-text {
+    padding: 0;
+    width: 90%;
+  }
 }

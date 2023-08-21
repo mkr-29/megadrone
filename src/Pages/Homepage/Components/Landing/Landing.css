@@ -2,6 +2,7 @@
 
 body {
   font-family: "Racing Sans One", cursive;
+  width: 100%;
 }
 
 * {
@@ -45,9 +46,8 @@ body {
   flex-direction: row;
   transform: rotate(-90deg);
   gap: 25px;
-  /* margin-left: -33dvw; */
   position: absolute;
-  left: -9rem;
+  left: -132px;
   z-index: 10;
 }
 
@@ -105,15 +105,14 @@ body {
 
 #hero-subtext {
   font-size: 1.75dvw;
-  margin-top: -20px;
   animation: fade-in 5s;
   font-family: var(--formulaRegular);
+  text-align: center;
 }
 
 .car {
-  width: 4 dvw;
+  width: 40dvw;
   max-width: 100%;
-  height: auto;
   opacity: 1; /* 0.3 */
   background: transparent;
   margin-top: -50px;
@@ -157,5 +156,42 @@ body {
   100% {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing {
+    height: 92vh;
+    padding: 0;
+  }
+  #hero-subtext {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-top: 5rem;
+  }
+  #hero-text {
+    top: 15rem !important;
+  }
+  .links .link {
+    font-size: 1rem;
+  }
+  .links {
+    left: -114px;
+    top: 12rem;
+  }
+  .cars {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .car {
+    width: 100%;
+  }
+  .car:nth-child(2) {
+    width: 90% !important;
+    margin-left: 3rem;
   }
 }

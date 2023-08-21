@@ -114,6 +114,10 @@
   border-right: 0px;
   color: white !important;
 }
+.reg-form {
+  display: flex;
+  /* flex-direction: column; */
+}
 .reg-form h3 {
   font-size: 2rem;
   font-family: var(--formulaRegular);
@@ -155,5 +159,64 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  width: 70%;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .heading {
+    width: 90%;
+    font-size: 4vw;
+    text-align: center;
+    height: auto;
+    padding-left: 0;
+  }
+  .form {
+    padding-left: 0rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .form input {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .reg-form h1 {
+    font-size: 2rem;
+  }
+  .reg-content h3 {
+    font-size: 1.5rem;
+  }
+  .reg-head {
+    margin-left: 3rem;
+    padding: 0;
+  }
+  .reg-form h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  #register-sec {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    overflow: hidden;
+  }
+  .tread-reg {
+    bottom: -80px;
+  }
+  .reg-form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .reg-submit-btn {
+    margin-top: 0;
+  }
+  .qrimage {
+    width: 100%;
+  }
+  .qrimage p {
+    text-align: center;
+    padding: 0 2rem;
+  }
 }

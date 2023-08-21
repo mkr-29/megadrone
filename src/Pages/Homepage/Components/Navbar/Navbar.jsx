@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import {HashLink as Link} from 'react-router-hash-link';
 import "./Navbar.css";
 import IEEELogo from "./Assets/ieeelogo.svg";
 import { Cross as Hamburger } from "hamburger-react";
@@ -9,6 +8,8 @@ import { Link as LNK } from "react-scroll";
 
 function Navbar() {
   const [header, setHeader] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -18,14 +19,24 @@ function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", changeBackground);
-  const [isOpen, setOpen] = useState(false);
-
-  const [isOpen1, setIsOpen1] = useState(false);
-
   const onClickHeader = () => {
     setIsOpen1(!isOpen1);
   };
+
+  const closeNavbar = () => {
+    setOpen(false);
+    setIsOpen1(false); // Close the mobile menu when a link is clicked
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
     <div className={header ? "header active" : "header"}>
       <div
@@ -39,16 +50,22 @@ function Navbar() {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
 
-        <div className="nav-items">
+        <div className={`nav-items ${isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link onClick={() => scroll.scrollToTop()} to="/">
+              <Link
+                onClick={() => {
+                  scroll.scrollToTop();
+                  closeNavbar();
+                }}
+                to="/"
+              >
                 HOME
               </Link>
             </li>
-
             <li>
               <LNK
+                onClick={closeNavbar}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -60,6 +77,7 @@ function Navbar() {
             </li>
             <li>
               <LNK
+                onClick={closeNavbar}
                 to="schedule"
                 spy={true}
                 smooth={true}
@@ -69,9 +87,9 @@ function Navbar() {
                 SCHEDULE
               </LNK>
             </li>
-
             <li>
               <LNK
+                onClick={closeNavbar}
                 to="register-sec"
                 spy={true}
                 smooth={true}
