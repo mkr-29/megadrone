@@ -27,6 +27,8 @@ export default function Landing() {
         </div>
       </div>
       <div className="cars">
+        {/* <span>A</span> */}
+        {/* <span>B</span> */}
         {/* <img id="img-1" className="car" src={car1} alt="car-1"></img> */}
         {/* <img id="img-2" className="car" src={car2} alt="car-2"></img> */}
       </div>

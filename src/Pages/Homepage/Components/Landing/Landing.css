@@ -83,6 +83,20 @@ body {
   font-family: var(--mega);
   color: yellow;
 }
+.cars span:nth-child(1) {
+  font-family: var(--transformers);
+  position: absolute;
+  font-size: 10rem;
+  top: -35rem;
+  right: 2rem;
+}
+.cars span:nth-child(2) {
+  font-family: var(--transformers);
+  position: absolute;
+  font-size: 10rem;
+  top: -35rem;
+  left: 2rem;
+}
 @keyframes stick {
   0% {
     position: fixed;
