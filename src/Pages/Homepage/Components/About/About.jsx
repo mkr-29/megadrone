@@ -7,8 +7,8 @@ export default function About() {
   return (
     <div id="about">
       <div id="tread-image">
-        <img src={Treads} className="treads" alt="" />
-        <img src={Treads} className="treads" id="tread-2" alt="" />
+        {/* <img src={Treads} className="treads" alt="" /> */}
+        {/* <img src={Treads} className="treads" id="tread-2" alt="" /> */}
       </div>
       <p id="about-text">About</p>
       <img src={RoboPoster} className="robo-poster" alt="" />

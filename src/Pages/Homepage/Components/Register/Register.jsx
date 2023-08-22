@@ -7,6 +7,12 @@ import Tread from "./Assets/tread.png";
 import { db } from "../Firebase/FirebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 
+const rolls = [
+  231030001, 231030221, 231030063, 231030084, 231030083, 231042001, 231030046,
+  231033010, 231030017, 231033016, 231030082, 231030106, 231030231, 231030228,
+  231030233, 231030177, 231033028, 231030079, 231030048,
+];
+
 export default function Register() {
   const [name, setName] = useState();
   const [roll, setRoll] = useState();
@@ -24,6 +30,11 @@ export default function Register() {
       return;
     }
 
+    if (rolls.includes(parseInt(roll))) {
+      alert("You are not allowed to submit the form with this roll number.");
+      return;
+    }
+
     addDoc(userCollectionRef, {
       name: name,
       email: email,
@@ -35,8 +46,8 @@ export default function Register() {
         alert("Registered successfully!");
         setName("");
         setEmail("");
-        setRoll();
-        setContact();
+        setRoll("");
+        setContact("");
         setTid("");
       })
       .catch((error) => {
@@ -103,6 +114,10 @@ export default function Register() {
             </div>
           </form>
           <div className="qrimage">
+            <p className="capt">
+              Those who registered for Robotrix are currently not eligible for
+              this event.
+            </p>
             <p>Limited Seats</p>
             <img src={qr} alt="" />
             <p>Registration Charges: Rs. 100 per person</p>

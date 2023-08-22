@@ -1,31 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
-
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   overflow-x: hidden;
-  padding: 2rem 0;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 .about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 4.5rem;
+  padding: 0 2.5rem;
 }
 #upper-text {
-  color: #ed1c24;
-  font-size: 2.75rem;
+  color: #701ced;
+  font-size: 2.67rem;
+  font-family: var(--transformersMov);
+  margin-top: 2rem;
 }
 #lower-text {
-  margin-top: 20px;
-  color: azure;
+  margin-top: 10px;
+  color: black;
   font-size: 1.8rem;
   text-align: center;
-  font-family: var(--formulaRegular);
-  /* padding: 0 4.7vw; */
+  font-family: var(--megaHollow);
+  padding: 0 1.5vw;
   text-align: justify;
 }
 #box {
@@ -37,19 +36,18 @@
 }
 
 #about-text {
-  margin-top: 2dvw;
-  color: #ed1c24;
-  font-size: 4vw;
+  color: #701ced;
+  font-size: 8vw;
   text-align: left;
   display: flex;
   width: 100%;
   align-items: flex-start;
   padding-left: 8rem;
-  font-family: "Formula1 Display Wide";
+  font-family: var(--mega);
 }
 .robo-poster {
-  width: 50%;
-  padding: 2rem 0;
+  width: 70%;
+  /* padding: 2rem 0; */
 }
 
 .treads {

@@ -13,27 +13,37 @@ code {
 }
 
 @font-face {
-  font-family: formulaBlack;
-  /* src: url(./Fonts/Formula1-Black.ttf); */
+  font-family: megaHollow;
+  src: url(./Fonts/MegatronHollow-20xw.ttf);
 }
 @font-face {
-  font-family: formulaBold;
-  /* src: url(./Fonts/Formula1-Bold.ttf); */
+  font-family: megaHollowItalics;
+  src: url(./Fonts/MegatronHollowCondensedItalic-lEm0.ttf);
 }
 @font-face {
-  font-family: formulaRegular;
-  /* src: url(./Fonts/Formula1-Regular.ttf); */
+  font-family: mega;
+  src: url(./Fonts/Megatron-rAo9.ttf);
 }
 @font-face {
-  font-family: formulaWide;
-  /* src: url(./Fonts/Formula1-Wide.ttf); */
+  font-family: transformers;
+  src: url(./Fonts/Transdings-WaoO.ttf);
+}
+@font-face {
+  font-family: transformersMov;
+  src: url(./Fonts/TransformersMovie-y9Ad.ttf);
+}
+@font-face {
+  font-family: cybertron;
+  src: url(./Fonts/CybertronBold-Mm3x.ttf);
 }
 
 :root {
-  --formulaBlack: formulaBlack;
-  --formulaBold: formulaBold;
-  --formulaRegular: formulaRegular;
-  --formulaWide: formulaWide;
+  --megaHollow: megaHollow;
+  --megaHollowItalics: megaHollowItalics;
+  --mega: mega;
+  --transformers: transformers;
+  --transformersMov: transformersMov;
+  --cybertron: cybertron;
 }
 
 ::-webkit-scrollbar {

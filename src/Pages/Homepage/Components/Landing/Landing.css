@@ -16,11 +16,12 @@ body {
   align-items: center;
   margin: none;
   justify-content: space-around;
-  padding-top: 25rem;
+  /* padding-top: 22rem; */
+  height: 100vh;
   overflow-x: hidden;
   position: relative;
   /* changes */
-  background: url(../../Assets/preloader.gif);
+  background: url(./assets/bg.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,16 +48,19 @@ body {
   transform: rotate(-90deg);
   gap: 25px;
   position: absolute;
-  left: -132px;
+  left: -165px;
   z-index: 10;
+  top: 50%;
 }
 
 .link {
   text-decoration: none;
+  font-family: var(--mega);
+  transition: 0.3s;
 }
 .link:hover {
   text-decoration: underline;
-  color: #fff200;
+  color: #1900ff;
 }
 
 .cars {
@@ -73,9 +77,11 @@ body {
   padding: none;
   font-style: normal;
   animation: sizeChange 25s infinite, stick 6s;
-  z-index: 101;
+  z-index: 1;
   position: absolute;
-  top: 40%;
+  top: 70%;
+  font-family: var(--mega);
+  color: yellow;
 }
 @keyframes stick {
   0% {
@@ -104,10 +110,13 @@ body {
 }
 
 #hero-subtext {
-  font-size: 1.75dvw;
+  font-size: 2dvw;
   animation: fade-in 5s;
-  font-family: var(--formulaRegular);
+  font-family: var(--transformersMov);
   text-align: center;
+  margin-top: 22rem;
+  letter-spacing: 2px;
+  color: rgb(255, 247, 0);
 }
 
 .car {

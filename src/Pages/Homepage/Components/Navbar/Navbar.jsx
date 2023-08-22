@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-import IEEELogo from "./Assets/ieeelogo.svg";
+import IEEELogo from "./Assets/ieeelogo.png";
 import { Cross as Hamburger } from "hamburger-react";
 import { animateScroll as scroll } from "react-scroll";
 import { Link as LNK } from "react-scroll";
@@ -69,7 +69,7 @@ function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-0}
+                offset={-30}
                 duration={1000}
               >
                 ABOUT

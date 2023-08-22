@@ -43,11 +43,11 @@
 }
 #logos .logo:nth-child(2) {
   width: 15rem;
-  height: 7rem;
+  height: 5rem;
 }
 #logos .logo:nth-child(3) {
   margin-right: 7rem;
-  width: 10rem;
+  width: 6rem;
 }
 
 #contact {

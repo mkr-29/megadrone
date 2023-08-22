@@ -16,7 +16,7 @@ class Preloader extends Component {
       this.setState({
         isLoading: false,
       });
-    }, 6000);
+    }, 5000);
   }
 
   render() {
