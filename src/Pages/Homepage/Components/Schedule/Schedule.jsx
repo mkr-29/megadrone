@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Clock from "./assets/Clock.svg";
 import Location from "./assets/venue.svg";
-import Layer from "./assets/layer.png";
+import Layer from "./assets/card.png";
 import "./Schedule.css";
 
 export default function Schedule() {
@@ -42,11 +42,7 @@ export default function Schedule() {
                 fill="white"
               />
             </mask>
-            <image
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              xlinkHref={Layer}
-              mask="url(#svgmask)"
-            ></image>
+            <image xlinkHref={Layer} mask="url(#svgmask)"></image>
 
             <text x="12%" y="0%" id="text">
               Day 1
