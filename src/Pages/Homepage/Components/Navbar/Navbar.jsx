@@ -81,7 +81,7 @@ function Navbar() {
                 to="schedule"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-0}
                 duration={1000}
               >
                 SCHEDULE
@@ -93,7 +93,7 @@ function Navbar() {
                 to="register-sec"
                 spy={true}
                 smooth={true}
-                offset={-0}
+                offset={-30}
                 duration={1000}
                 id="nav-register"
               >

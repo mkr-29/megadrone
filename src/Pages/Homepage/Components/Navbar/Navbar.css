@@ -5,8 +5,11 @@
 #nav-register {
   color: #701ced;
 }
+#nav-register:hover {
+  color: #b485fa;
+}
 #nav-register::after {
-  background-color: #701ced;
+  background-color: #b485fa;
 }
 .header.z-index-zero {
   z-index: 0;
