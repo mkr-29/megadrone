@@ -51,8 +51,8 @@
 .cards-inner {
   padding-top: 3rem;
   padding-inline: 10%;
-  background-image: url("./assets/background-1.png"),
-    url("./assets/background-2.png");
+  /* background-image: url("./assets/background-1.png"), */
+  /* url("./assets/background-2.png"); */
   background-repeat: no-repeat, no-repeat;
   background-position: left, right;
   background-size: contain;
