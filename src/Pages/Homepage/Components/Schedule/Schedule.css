@@ -111,7 +111,7 @@
   /* filter: brightness(0.8); */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .cards-outer {
     width: 100%;
   }
@@ -126,7 +126,7 @@
   }
 
   .cards-outer h1 {
-    font-size: 4vw;
+    font-size: 8vw;
     /* text-align: center; */
     margin-left: 1rem;
     padding-inline: 0;

@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   overflow-x: hidden;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 .about-text {
   display: flex;
@@ -89,5 +89,9 @@
   #about-text {
     padding: 0;
     width: 90%;
+  }
+  #about {
+    height: 115vh;
+    padding-top: 2rem;
   }
 }

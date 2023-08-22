@@ -12,7 +12,7 @@ import Megadrone from "./Components/Upcoming/Megadrone";
 export default function Homepage() {
   return (
     <div>
-      <Preloader />
+      {/* <Preloader /> */}
       <Navbar />
       <Landing />
       <About />

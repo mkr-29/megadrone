@@ -151,7 +151,7 @@
 }
 
 .reg-submit {
-  background: #701ced;
+  background: #aa7eec;
   color: black;
   padding: 0.5rem 2rem;
   font-size: 2rem;
@@ -169,7 +169,7 @@
 @media (max-width: 576px) {
   .heading {
     width: 90%;
-    font-size: 4vw;
+    font-size: 8vw;
     text-align: center;
     height: auto;
     padding-left: 0;
@@ -202,7 +202,7 @@
     padding: 0 2rem;
   }
   #register-sec {
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     overflow: hidden;
   }

@@ -180,14 +180,14 @@ body {
     margin-top: 5rem;
   }
   #hero-text {
-    top: 15rem !important;
+    top: 20rem !important;
   }
   .links .link {
     font-size: 1rem;
   }
   .links {
-    left: -114px;
-    top: 12rem;
+    left: -130px;
+    top: 18rem;
   }
   .cars {
     flex-direction: column;
