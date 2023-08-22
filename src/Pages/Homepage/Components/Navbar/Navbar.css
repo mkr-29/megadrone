@@ -3,13 +3,13 @@
   padding: 0;
 }
 #nav-register {
-  color: #701ced;
+  color: yellow;
 }
 #nav-register:hover {
-  color: #b485fa;
+  color: yellow;
 }
 #nav-register::after {
-  background-color: #b485fa;
+  background-color: yellow;
 }
 .header.z-index-zero {
   z-index: 0;
@@ -21,7 +21,7 @@
   width: 100%;
   /* animation: fade-in 0.5s; */
   /* animation to pause for 6s */
-  animation: fade-in1 7s;
+  /* animation: fade-in1 7s; */
   /* background: #f4f4f4; */
   background: linear-gradient(90deg, #000 0%, #575757 48.96%, #000 100%);
 }
@@ -70,7 +70,7 @@
   list-style: none;
 }
 .nav-items ul a {
-  color: rgb(139, 139, 139);
+  color: white;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.5rem;

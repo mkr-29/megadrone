@@ -79,7 +79,7 @@
 }
 
 .form input::placeholder {
-  color: #b388f4;
+  color: #dccdf4;
 }
 .form input {
   text-decoration: none;
@@ -96,7 +96,8 @@
   display: block;
   border-bottom: 1px solid black;
   font-size: 1.5rem;
-  font-family: var(--megaHollow);
+  font-family: var(--cybertron);
+  letter-spacing: 1px;
   text-transform: uppercase;
   background: transparent;
   border-top: 0px;

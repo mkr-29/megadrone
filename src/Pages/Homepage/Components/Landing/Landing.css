@@ -76,7 +76,7 @@ body {
   font-size: 10dvw;
   padding: none;
   font-style: normal;
-  animation: sizeChange 25s infinite, stick 6s;
+  animation: sizeChange 25s infinite;
   z-index: 1;
   position: absolute;
   top: 70%;
