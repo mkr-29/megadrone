@@ -13,6 +13,7 @@
 
 #quickLinks h3 {
   font-size: 2rem;
+  font-family: var(--megaHollow);
 }
 #quickLinks {
   display: flex;
@@ -58,10 +59,24 @@
 .logo {
   width: 10dvw;
 }
-
+#copyright {
+  font-family: var(--optimus);
+}
 a {
   text-decoration: none;
   color: aliceblue;
+  font-size: 1.5dvw;
+}
+#contact a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: var(--optimus);
+  font-size: 1.5dvw;
+}
+#quickLinks a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: var(--optimus);
   font-size: 1.5dvw;
 }
 
