@@ -168,7 +168,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .landing {
     height: 92vh;
     padding: 0;

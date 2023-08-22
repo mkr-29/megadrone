@@ -61,7 +61,7 @@
   top: 10%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #lower-text {
     font-size: 1.2rem;
   }

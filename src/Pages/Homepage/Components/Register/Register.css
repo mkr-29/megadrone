@@ -166,7 +166,7 @@
   width: 100%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .heading {
     width: 90%;
     font-size: 8vw;

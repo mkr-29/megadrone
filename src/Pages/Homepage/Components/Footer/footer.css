@@ -70,7 +70,7 @@ a {
   font-size: 3dvw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #logos .logo:nth-child(1) {
     margin-left: 0rem;
     width: 4rem;
