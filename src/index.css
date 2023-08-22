@@ -36,6 +36,10 @@ code {
   font-family: cybertron;
   src: url(./Fonts/CybertronBold-Mm3x.ttf);
 }
+@font-face {
+  font-family: optimus;
+  src: url(./Fonts/Optimus-73lD.ttf);
+}
 
 :root {
   --megaHollow: megaHollow;
@@ -44,13 +48,14 @@ code {
   --transformers: transformers;
   --transformersMov: transformersMov;
   --cybertron: cybertron;
+  --optimus: optimus;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ed1c24;
+  background-color: #701ced;
   border-radius: 6px;
 }
 

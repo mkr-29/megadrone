@@ -13,17 +13,17 @@
   padding: 0 2.5rem;
 }
 #upper-text {
-  color: #701ced;
+  color: #b388f4;
   font-size: 2.67rem;
   font-family: var(--transformersMov);
   margin-top: 2rem;
 }
 #lower-text {
   margin-top: 10px;
-  color: black;
+  color: #e3d5f7;
   font-size: 1.8rem;
   text-align: center;
-  font-family: var(--megaHollow);
+  font-family: var(--optimus);
   padding: 0 1.5vw;
   text-align: justify;
 }
@@ -36,7 +36,7 @@
 }
 
 #about-text {
-  color: #701ced;
+  color: #b388f4;
   font-size: 8vw;
   text-align: left;
   display: flex;

@@ -8,7 +8,7 @@
   font-size: 8vw;
   height: 100px;
   background-color: none;
-  color: #701ced;
+  color: #b388f4;
   /* margin: 20px; */
   display: flex;
   width: 100%;
@@ -75,11 +75,11 @@
   border: 0px 0px 0px 1px;
   background-color: transparent;
   gap: 2rem;
-  color: black !important;
+  color: #b388f4 !important;
 }
 
 .form input::placeholder {
-  color: black;
+  color: #b388f4;
 }
 .form input {
   text-decoration: none;
@@ -140,7 +140,7 @@
 .qrimage p {
   font-family: var(--mega);
   font-size: 1.5rem;
-  color: black;
+  color: #b388f4;
 }
 .qrimage img {
   width: 300px;
