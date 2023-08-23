@@ -57,10 +57,15 @@
   position: relative;
   flex-direction: column;
 }
+.reg-form h1 {
+  font-size: 3rem !important;
+}
 .reg-form {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 .form {

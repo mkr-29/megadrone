@@ -60,9 +60,9 @@ export default function Register() {
       <div className="heading">Register</div>
       <div className="register-section">
         <div className="reg-form">
-          {/* <h1>Registrations Full</h1> */}
-          {/* <h3>You'll be contacted soon if you have registered successfully!</h3> */}
-          <form
+          <h1>Registrations Full</h1>
+          <h3>You'll be contacted soon if you have registered successfully!</h3>
+          {/* <form
             onSubmit={handleSubmit}
             className="reg-content form"
             method="post"
@@ -112,8 +112,8 @@ export default function Register() {
                 SUBMIT
               </button>
             </div>
-          </form>
-          <div className="qrimage">
+          </form> */}
+          {/* <div className="qrimage">
             <p className="capt">
               Those who registered for Robotrix are currently not eligible for
               this event.
@@ -121,7 +121,7 @@ export default function Register() {
             <p>Limited Seats</p>
             <img src={qr} alt="" />
             <p>Registration Charges: Rs. 100 per person</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
